@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="lab10ap.FileHash" table="Files">
+        <meta attribute="class-description">
+            This class contains the employee detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="fileName" column="file_name" type="string"/>
+        <property name="fileFolder" column="file_folder" type="string"/>
+        <property name="filePath" column="file_path" type="string"/>
+        <property name="shaHash" column="sha_hash" type="string"/>
+    </class>
+</hibernate-mapping>
